@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<p-chart #chart id="myChart" type="line" [data]="data" [options]="options"  width="800px" height="500px"></p-chart>
+
+<!-- <div id="barChart">
+    <ngx-charts-bar-vertical  [view]="view" [scheme] ="colorScheme" [results]="single" [gradient]="gradient" [xAxis]="showXAxis"
+    [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
+    [yAxisLabel]="yAxisLabel" >
+    </ngx-charts-bar-vertical>
+
+    <p>This is also under the division</p>
+</div> -->
+
+
+<button type="button" class="btn btn-primary" (click)="rederBarChart(chart)"> <a id="link1" href="#" download="ChartImageChrome.png"> Export Chart </a> </button>
+
+<router-outlet></router-outlet>
+
+
+<!-- <h3 class="first">Basic</h3>
+<p-splitButton label="Save" icon="pi pi-file" (onClick)="save('info')" [model]="items"></p-splitButton> -->
