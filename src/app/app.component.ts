@@ -117,12 +117,12 @@ export class AppComponent {
           var tooltipEl3 = document.getElementById('chartjs-tooltip3');
           if (tooltipEl1 && tooltipEl2 && tooltipEl3) {
             // Hide if no tooltip
-            // if (tooltipModel.opacity === 0) {
-            //   tooltipEl1.style.opacity = '0';
-            //   tooltipEl2.style.opacity = '0';
-            //   tooltipEl3.style.opacity = '0';
-            //   return;
-            // }
+            if (tooltipModel.opacity === 0) {
+              tooltipEl1.style.opacity = '0';
+              tooltipEl2.style.opacity = '0';
+              tooltipEl3.style.opacity = '0';
+              return;
+            }
           } else if (tooltipEl1 && tooltipEl2) {
             // Hide if no tooltip
             if (tooltipModel.opacity === 0) {
