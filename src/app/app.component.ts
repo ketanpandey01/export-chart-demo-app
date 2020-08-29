@@ -361,6 +361,27 @@ export class AppComponent {
     return bytes;
   }
 
+  addZeroes(num: any) {
+    // Convert input string to a number and store as a variable.
+    var value = Number(num);
+    // Split the input string into two arrays containing integers/decimals
+    var res = num.split(".");
+    var convertedNum: string;
+    // If there is no decimal point or only one decimal place found.
+    if (res.length == 1 || res[1].length < 3) {
+        // Set the number to two decimal places
+        convertedNum = value.toFixed(2);
+    }
+    else {
+        num = num.toString(); //If it's not already a String
+        num = num.slice(0, (num.indexOf(".")) + 3); //With 3 exposing the hundredths place
+        convertedNum = num;
+    }
+
+    // Return updated or original number.
+    return convertedNum;
+}
+
 
 
 
