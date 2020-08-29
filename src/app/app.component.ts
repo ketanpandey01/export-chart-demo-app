@@ -117,12 +117,12 @@ export class AppComponent {
           var tooltipEl3 = document.getElementById('chartjs-tooltip3');
           if (tooltipEl1 && tooltipEl2 && tooltipEl3) {
             // Hide if no tooltip
-            if (tooltipModel.opacity === 0) {
-              tooltipEl1.style.opacity = '0';
-              tooltipEl2.style.opacity = '0';
-              tooltipEl3.style.opacity = '0';
-              return;
-            }
+            // if (tooltipModel.opacity === 0) {
+            //   tooltipEl1.style.opacity = '0';
+            //   tooltipEl2.style.opacity = '0';
+            //   tooltipEl3.style.opacity = '0';
+            //   return;
+            // }
           } else if (tooltipEl1 && tooltipEl2) {
             // Hide if no tooltip
             if (tooltipModel.opacity === 0) {
@@ -219,7 +219,8 @@ export class AppComponent {
             tooltipElArr[i].style.pointerEvents = 'none';
             tooltipElArr[i].style.border = '1.5px solid ' + tooltipModel.title.datasets[index].borderColor;
             tooltipElArr[i].style.borderRadius = '5px'
-            tooltipElArr[i].style.width = '28%';
+            tooltipElArr[i].style.width = '25%';
+            tooltipElArr[i].style.background = 'rgba(255, 255, 255, 0.8)';
             
             if(i === 0){
               tooltipElArr[i].style.left = window.pageXOffset + tooltipModel.caretX + position.left + 'px';
