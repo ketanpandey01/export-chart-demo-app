@@ -1,6 +1,26 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<p-chart #chart id="myChart" type="line" [data]="data" [options]="options"  width="800px" height="500px"></p-chart>
 
+
+<div>
+    <div >
+        <p-chart #chart id="myChart" type="line" [data]="data" [options]="options"  width="800px" height="500px"></p-chart>
+        <!-- <canvas 
+        baseChart
+        width="300" height="300"
+        [data]="pieChartData"
+        [labels]="pieChartLabels"
+        [chartType]="pieChartType"
+        [options]="pieChartOptions"
+        [plugins]="pieChartPlugins"
+        [colors]="pieChartColors"
+        [legend]="pieChartLegend">
+      </canvas> -->
+    </div>
+    
+    <!-- <div class="p-col">
+        <p-chart #chart id="myChart" type="line" [data]="data" width="600px" height="500px"></p-chart>
+    </div> -->
+</div>
 <!-- <div id="barChart">
     <ngx-charts-bar-vertical  [view]="view" [scheme] ="colorScheme" [results]="single" [gradient]="gradient" [xAxis]="showXAxis"
     [yAxis]="showYAxis" [legend]="showLegend" [showXAxisLabel]="showXAxisLabel" [showYAxisLabel]="showYAxisLabel" [xAxisLabel]="xAxisLabel"
@@ -11,7 +31,7 @@
 </div> -->
 
 
-<button type="button" class="btn btn-primary" (click)="rederBarChart(chart)"> <a id="link1" href="#" download="ChartImageChrome.png"> Export Chart </a> </button>
+<button type="button" class="btn btn-primary" (click)="rederBarChart()"> <a id="link1" href="#" download="ChartImageChrome.png"> Export Chart </a> </button>
 
 <router-outlet></router-outlet>
 
