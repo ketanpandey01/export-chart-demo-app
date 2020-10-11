@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import html2canvas from 'html2canvas';
 import { ChartType, ChartOptions } from 'chart.js';
-import { Label } from 'ng2-charts';
+// import { Label } from 'ng2-charts';
 import 'chartjs-plugin-piechart-outlabels';
 
 @Component({
@@ -54,7 +54,7 @@ export class AppComponent {
     }
   };
   public pieChartData: number[] = [300, 500, 100, 78];
-  public pieChartLabels: Label[] = this.pieChartData.map(String);
+  // public pieChartLabels: Label[] = this.pieChartData.map(String);
   public pieChartType: ChartType = 'pie';
   public pieChartLegend = true;
   public pieChartPlugins = [];

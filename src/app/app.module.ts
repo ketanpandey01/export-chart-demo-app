@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {ChartModule} from 'primeng/chart';
-import { ChartsModule, ThemeService } from 'ng2-charts';
+// import { ChartsModule, ThemeService } from 'ng2-charts';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,9 +20,10 @@ import {HTTP_INTERCEPTORS} from '@angular/common/http'
     ChartModule,
     SplitButtonModule,
     BrowserAnimationsModule,
-    ChartsModule
+    // ChartsModule
   ],
-  providers: [ThemeService 
+  providers: [
+    // ThemeService 
   ],
   bootstrap: [AppComponent]
 })
